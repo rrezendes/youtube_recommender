@@ -6,7 +6,7 @@ It's a Youtube recommender of Datascience and Machine Learning videos.
 
 I learned how to develop a Data Science Project, end to end.
 
-You can access here: https://radiant-inlet-64351.herokuapp.com/
+You can access here: https://ytuberec.herokuapp.com/
 
 Check out the creation process:
 

@@ -47,30 +47,29 @@ def get_predictions():
     return '\n'.join(predictions_formatted), last_update
 
 @app.route('/')
+#def main_page():
+#    preds, last_update = get_predictions()
+#    return """<head><h1>Recomendador de Vídeos do Youtube</h1></head>
+#    <body>
+#    Segundos desde a última atualização: {}
+#    <table>
+#             {}
+#    </table>
+#    </body>""".format((time.time_ns() - last_update) / 1e9, preds)
+
 def main_page():
     preds, last_update = get_predictions()
-    return """<table>
-    <tbody>
-    <tr>
-    <td>
-    <h1>Youtube Video Recommender</h1>
-    </td>
-    </tr>
-    <tr>
-    <td>
-    <p>Source code:&nbsp;</p>
-    <p><a href="https://github.com/rrezendes/youtube_recommender">https://github.com/rrezendes/youtube_recommender</a></p>
-    <p>Seconds from last update: {} </p>    
-    </td>
-    </tr>
-    <tr>
-    <p>&nbsp;</p>
-    </tr>
-    <tr>
-    {}
-    </tr>    
-    </tbody>
-    </table>""".format((time.time_ns() - last_update) / 1e9, preds)
+    return """<head><h1>Youtube Video Recommender</h1></head>
+    <body>
+    Seconds from last update: o: {}
+    <table>
+             {}
+    </table>
+    <table>
+    <br>    
+    Project source code: https://github.com/rrezendes/youtube_recommender    
+    </table>     
+    </body>""".format((time.time_ns() - last_update) / 1e9, pred
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0')
