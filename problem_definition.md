@@ -1,7 +1,7 @@
-##Problema
+## Problema
 Gasto muito tempo buscando novos videos no youtube.
 
-##Solução ideal
+## Solução ideal
 Ter uma lista apenas dos videos que eu com certeza vou gostar.
 
 ## Como eu posso fazer isso com Data Science/ML?
@@ -18,8 +18,6 @@ Web app com os videos (links) e as previsões ordenadas
 
 Métrica primária: dos top N videos quantos eu coloco na lista de watch later.
 Métrica secundária: quanto tempo eu passo selecionando vídeos. 
-
-
 
 ## Otros pontos
 Quão fácil é achar dados para essa solução? 
